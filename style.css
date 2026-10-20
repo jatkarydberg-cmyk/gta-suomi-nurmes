@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#game-shell {
+  position: relative;
+  width: 960px;
+  max-width: 100vw;
+  height: 540px;
+  border: 4px solid #1f2937;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #223;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #2a6d46 0%, #163d2b 100%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: none;
+  place-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.overlay.visible {
+  display: grid;
+}
+
+#message {
+  padding: 24px;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 10px;
+  background: #facc15;
+  color: #111827;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fde047;
+}
